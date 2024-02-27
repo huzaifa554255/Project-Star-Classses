@@ -1,0 +1,292 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+p{
+    font-weight: 20px;
+}
+
+/*************************
+    Section Heading
+*************************/
+
+.section-heading{
+    color: var(--bs-orange);
+}
+
+/*************************
+    Navbar
+*************************/
+.nav-link{
+    flex: 1;
+    display: block;
+}
+
+#nav1{
+    padding-right: 50px;
+    text-align: center;
+}
+
+nav{
+    background: white!important;
+    box-shadow: 1px 1px 2px black;
+    height: 13vh;
+}
+nav .navbar-brand img{
+    position: relative;
+    right: 40px;
+    display: inline-block;
+}
+.navbar-nav .nav-link{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-toggler{
+    border: 0;
+    outline: none!important;
+    padding: none!important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(0, 0, 0);
+   
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: orange;
+  transition: 0.5s ease-in-out;
+}
+/*************************
+    Home
+*************************/
+
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before{
+    content: "";
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-inner .carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 37%;
+    left: 0;
+    right: 0;
+}
+.carousel-inner .carousel-caption span{
+    color: var(--bs-orange);
+}
+.carousel-inner .carousel-caption h2{
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0px auto 10px auto;
+}
+.carousel-inner .carousel-caption p{
+    font-size: 20px;
+    width: 80%;
+    margin: 0px auto 20px auto;
+}
+
+/*************************
+    About
+*************************/
+#about{
+    padding: 66px;
+}
+
+.lh-base{
+    background-color: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.lh-base:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+/*************************
+    Courses
+*************************/
+
+.course .box{
+    padding: 10px 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#course{
+    padding: 104px;
+}
+/*************************
+   Fee Details
+*************************/
+#fee{
+    padding: 80px;
+}
+.card1:hover {
+    background: #00ffb6;
+    border: 1px solid #00ffb6;
+}
+
+.card1:hover .list-group-item {
+    background: #00ffb6 !important
+}
+
+.card2:hover {
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+}
+
+.card2:hover .list-group-item {
+    background: #00C9FF !important
+}
+
+
+.card3:hover {
+    background: #ff95e9;
+    border: 1px solid #ff95e9;
+}
+
+.card3:hover .list-group-item {
+    background: #ff95e9 !important
+}
+
+
+.card:hover .btn-outline-dark {
+    color: white;
+    background: #212529;
+}
+
+/*************************
+    Faculty
+*************************/
+.card-group h2{
+    padding-top: 100px;
+    justify-content: center;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 600;
+    width: 15%;
+    margin: 0px auto 10px auto;
+    
+    /* text-decoration: center; */
+    
+}
+
+
+/* #faculty{
+    padding: 104px;
+} */
+/*************************
+    Gllery
+*************************/
+
+#gallery{
+    padding: 99px;
+}
+
+/*************************
+    Contact Us
+*************************/
+#contact{
+    padding: 99px;
+}
+
+/*************************
+    iframe
+*************************/
+
+@media(max-width:700px){
+    .navbar-toggler{
+        display: block;
+    
+        
+    }
+}
+@media(max-width:700px){
+    .container{
+        width: 340px;
+        display: inline-block;
+    }
+}
+
+
+@media(max-width:768px)
+{
+    iframe{
+        width: 300px;
+    }
+}
+@media(max-width:577px)
+{
+    iframe{
+
+        width: auto;
+    }
+}
+/*************************
+    Media
+*************************/
+@media(max-width:768px)
+{
+    .carousel-inner .carousel-caption h2{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:577px)
+{
+    .carousel-inner .carousel-caption h2{
+        font-size: 25px;
+    }
+    .carousel-inner .carousel-caption p{
+        font-size: 13px;
+    }
+}
+@media(max-width:500px)
+{
+    #school{
+       position: relative;
+       left: 30%;
+    }
+}
+@media only screen and (max-width: 912px){
+    .navbar-nav{
+        float:right ;
+        background-color: ghostwhite;
+       
+
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color:lightseagreen;
+
+        line-height: 1px;
+    }
+    
+}
+@media(min-width: 565px) and (max-width: 783){
+    #faculty{
+        width: auto;
+    }
+}
+
+
